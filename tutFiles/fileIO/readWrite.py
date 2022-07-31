@@ -1,0 +1,5 @@
+f = open("readWrite.txt", "r+")
+print(f.read())
+f.write("\n")
+f.write("Learn django in fifth sem")
+f.close()

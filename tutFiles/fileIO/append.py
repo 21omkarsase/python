@@ -1,0 +1,6 @@
+f = open("write.txt", "at")
+a = f.write("\n")
+print(a)
+a = f.write("My college name is PCE")
+print(a)
+f.close()

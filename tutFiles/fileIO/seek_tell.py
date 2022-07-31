@@ -1,0 +1,10 @@
+f = open("readWrite.txt")
+# print(f.tell())
+print(f.readline())
+print(f.readline())
+# print(f.tell())
+print(f.seek(0))
+print(f.readline())
+# print(f.tell())
+
+f.close()
