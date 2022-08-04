@@ -1,3 +1,4 @@
+print("2"=="2")
 class Employee:
     no_of_leaves = 10
     pass
@@ -24,3 +25,4 @@ Employee.no_of_leaves = 11
 print(Employee.no_of_leaves)
 print(omkar.no_of_leaves)
 print(sairaj.no_of_leaves)
+print(omkar==omkar)

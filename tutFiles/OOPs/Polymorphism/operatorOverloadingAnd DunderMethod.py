@@ -8,7 +8,16 @@ class Employee:
 
     def printDetails(self):
         return f"name is {self.name} , age is {self.age} , college is {self.college} and no of leaves is {self.no_of_leaves}"
-
+        
+    def add(self,a:int,b:int)->int:
+        return a+b
+    
+    def add(self,a:str,b:str)->str:
+        return a+b
+        
+    def add(self,a:int,b:str)->str:
+        return b
+        
     def __floordiv__(self, other):
         return self.age//other.age
 
