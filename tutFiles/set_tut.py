@@ -1,7 +1,0 @@
-s = set([1, 2, 3, 4])
-s.add(5)
-s1 = s.union({3, 4, 5, 6})
-print(s, s1)
-s.update(1, 7)
-s.remove(5)
-print(s, type(s))

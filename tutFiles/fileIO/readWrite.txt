@@ -1,2 +1,0 @@
-learn python for fourth sem
-Learn django in fifth sem
