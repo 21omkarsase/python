@@ -4,11 +4,13 @@ arr = np.array([1, 2, 3, 4, 5, 2, 2, 3, 5, 6, 67, 72, 4])
 
 # searching
 # where
-b = np.where(arr == 2)
-b = np.where(arr & 1,)
-print(b)  # tuple of list of indexes to conditional ele ([1,2,3],)
+b = np.where(arr < 5)
+print("abc",b, "xyz")
+b = np.where(arr > 6)
+print("start",b, "end")  # tuple of list of indexes to conditional ele ([1,2,3],)
 
-a = np.arange(10)
+a = np.arange(1,11)
+print("aa", a)
 # (condition,this operation will be perform on ele satisfying cond,this operation on those who won't satisfy cond)
 print(np.where(a < 5, a*10, a*5))
 
@@ -23,16 +25,16 @@ print("**************serachsorted()***********")
 x = np.array([1, 2, 4, 5])
 
 y = np.searchsorted(x, 3)
+print("out1",y)
 y = np.searchsorted(x, 4, side="right")  # it will give from right side
-print(x)
-print(y)
+print("out2",y)
 
 print("**************insert()***********")
 
 # insert()
-a = np.array([1, 2, 3, 4, 5])
-a = np.insert(a, 1, 20)
-print(a)
+a = np.array([1, 2, 3, 4, 6])
+a = np.insert(a, 4, 5)
+print("ar", a)
 a = np.array([[10, 20, 30, 40, 50], [10, 20, 30, 40, 50]])
 # np.insert(a, 0, 90) like this og array will not modify
 # axis 1 will make 2d array inserting ele to 0 pos(start)

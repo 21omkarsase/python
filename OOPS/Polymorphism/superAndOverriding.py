@@ -11,6 +11,7 @@ class B(A):
     def __init__(self):
         super().__init__()
         self.var1 = "I am instance var of b"
+        print("11",A().var1)
         print(super().var1)
         pass
 

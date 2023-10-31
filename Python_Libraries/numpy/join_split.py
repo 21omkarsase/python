@@ -11,10 +11,10 @@ d = np.array(
     [[8, 7, 6, 5, 9], [201, 202, 203, 204, 205], [18, 17, 16, 15, 25]])
 
 # concatenation
-print(np.concatenate((a, b)), "\n")  # 1d
+print("113",np.concatenate((a, b), axis=0), "\n")  # 1d
 
-print(np.concatenate((c, d), axis=1), "\n")  # 2d  1 for row
-print(np.concatenate((c, d), axis=0), "\n")  # 2d  0 for col
+print("start",np.concatenate((c, d), axis=1), "end\n")  # 2d  1 for row
+print("start",np.concatenate((c, d), axis=0), "end\n")  # 2d  0 for col
 
 
 # stack(),hstack(),vstack() & dstack() for merging

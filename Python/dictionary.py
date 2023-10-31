@@ -53,3 +53,12 @@ for i in dict3.keys():
    
 for i in dict3.values():
    print(i)
+
+test = {"name" : "Omkar Sase", "age" : 20, "college" : "PCE"}
+print(test)
+
+print(test["name"])
+print(test["age"])
+
+for key, value in test.items():
+   print(key, " : ", value)

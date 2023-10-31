@@ -34,8 +34,9 @@ print("data type : ", arr.dtype, type(arr[0]))
 
 
 # *************data type conversion**************************
-arr = np.array([1, 2, 3, 4], dtype=np.int_)
-print(arr.dtype)  # int8
+arr = np.array([1, 2, 3, 4], dtype=np.float32)
+print(arr)
+print("x",arr.dtype)  # int8
 print(np.array(arr, dtype="f").dtype)  # float32
 
 # int to float
@@ -47,7 +48,7 @@ print("data type of new_arr : ", new_arr.dtype, arr.dtype)
 
 # astype
 new_arr = arr.astype(float)  # float64
-print("data types : ", arr.dtype, new_arr.dtype)
+print("astype : data types : ", arr.dtype, new_arr.dtype)
 
 
 print(np.ulonglong([1.0, 2.0, 3.0]).dtype)

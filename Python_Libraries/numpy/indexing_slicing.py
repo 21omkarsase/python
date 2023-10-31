@@ -18,7 +18,7 @@ print(a[0][::-1])  # 3 2 1
 print(a[1:])  # [[4,5,6][7,8,9]]
 print("********")
 print(a[1:][0])  # 4 5 6
-print(a[1:][1])  # 7 8 9
+print("abc", a[1:][1][1:],"xyz")  # 7 8 9
 
 for i in range(len(a)):
     a[i] = a[i][::-1]

@@ -11,8 +11,8 @@ print()
 
 # nditer()
 for i in np.nditer(a):
-    print(i, end=" ")
-print()
+    print(i, end=" x ")
+print("end  1")
 
 # ndenumerate()  will print idx and value
 for idx, val in np.ndenumerate(a):

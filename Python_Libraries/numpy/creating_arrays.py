@@ -23,7 +23,7 @@ print(arr, arr.ndim)
 # 3d array
 arr = np.array([[[1, 2], [3, 4], [5, 6]], [
                [1, 2], [3, 4], [5, 6]], [[1, 2], [3, 4], [5, 6]]])
-print(arr, arr.ndim)
+print("ARR", arr, arr.ndim," END")
 
 
 # multi dimensional array
@@ -33,7 +33,7 @@ print(arr, arr.ndim)
 # ******* matrix()   #for 2d only
 # string input
 print(np.array([['1', '2'], ['3', '4']]))
-print(np.array([[1, 2], [3, 4]]))
+print(np.array([[1, 2], [3, 4]]), "type of ",type(np.array([[1, 2], [3, 4]])))
 
 a = np.matrix('1 2; 3 4')
 print("Via string input : \n", a, "\n\n", type(a))
@@ -51,7 +51,7 @@ print()
 
 # empty array
 ept = np.empty(2, dtype=int)
-print(ept, type(ept), ept.ndim)
+print("empty",ept, type(ept), ept.ndim)
 
 ept = np.empty([2, 2], dtype=int)
 print(ept, type(ept), ept.ndim)
@@ -103,7 +103,7 @@ print("*****************linespace***********")
 arr = np.linspace(10, 20, num=7, dtype=int)
 arr = np.linspace(10, 20, num=5, dtype=int)
 arr = np.linspace(10, 20, num=6, dtype=int)
-print(arr, arr.ndim)
+print("linespace",arr, arr.ndim)
 
 
 # **********************numpy arrays with random functions***************************

@@ -1,16 +1,13 @@
 class Computer:
-	def __init__(self):
-		self.name="omkar"
-	
-	def update(self):
-		self.name="omkar sase"
+	def __init__(self, name, age):
+		self.name = name
+		self.age = age
 	
 	def compare(self,other):
-		return self.name==other.name
+		return self.name==other.name and self.age == other.age
 	
-c1=Computer()
-c2=Computer()
+c1=Computer("omkar", 20)
+c2=Computer("Sairaj", 20)
 
-# c2.update()
 
 print(c1.compare(c2))

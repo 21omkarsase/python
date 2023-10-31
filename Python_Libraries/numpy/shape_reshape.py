@@ -33,6 +33,7 @@ print(a, a.shape, a.ndim)
 
 a = a.reshape(12)  # onde D array with 12 cols
 # or
+print("abc", a)
 # a=a.reshape(-1)  to convert to 1d array
 a = np.reshape(a, (6, 2))
 # print(a.shape[0]*a.shape[1])

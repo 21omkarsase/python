@@ -1,11 +1,11 @@
-f=open("data.txt")
+# f=open("data.txt")
 
-# print(f.readline())
+# # print(f.readline())
 
-for line in f:
-	print(line)
+# for line in f:
+# 	print(line)
 
-f.close()
+# f.close()
 
 #file closing automatically using with keyword
 with open("data.txt") as f:

@@ -1,6 +1,6 @@
 class Employee:
-    __privateAs = "I'm private"  # only class
-    _protectedAs = "I'm  protected"  # class and subclass
+    __email = "abcxyz123@gmail.com"  # only class
+    _phoneNo = "7304289092"  # class and subclass
 
     no_of_leaves = 10
 
@@ -8,11 +8,14 @@ class Employee:
         self.name = xname
         self.age = xage
         self.college = xcollege
+        
+    def getEmail(self):
+        return self.__email
 
     def printDetails(self):
         return f"name is {self.name} , age is {self.age} , college is {self.college} and no of leaves is {self.no_of_leaves}"
 
 
-omkar = Employee("omkar", 20, "PCE")
-print(omkar._protectedAs)  # for protected
-print(omkar._Employee__privateAs)  # for private
+employee1 = Employee("omkar", 20, "PCE")
+
+print(employee1.getEmail())

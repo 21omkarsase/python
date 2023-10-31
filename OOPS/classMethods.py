@@ -36,3 +36,6 @@ print(sairaj.printDetails())
 rohan = Employee.from_str("rohan-20-DY Patil")
 print(rohan.printDetails())
 Employee.printCompanyName("VISION 11")
+
+Employee.printCompanyName("STM11.ai")
+omkar.printCompanyName("STM11.ai")

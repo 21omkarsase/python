@@ -15,7 +15,7 @@ sairaj.college = "Terna"
 sairaj.age = 20
 
 print(sairaj.name)
-print(sairaj.__dict__)
+print(1, sairaj.__dict__)
 print(sairaj.no_of_leaves)
 sairaj.no_of_leaves = 12
 print(Employee.__dict__)

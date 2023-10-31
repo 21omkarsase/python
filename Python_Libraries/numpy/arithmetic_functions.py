@@ -1,21 +1,21 @@
 import numpy as np
 
-arr = np.array([1, 2, 3, 4])
+arr = np.array([100, 200, 300, 40])
 
 # *****************max and min for 1d array*************
 print(np.min(arr))  # min
 print(np.max(arr))  # max
-print(np.argmin(arr))  # pos of min
-print(np.argmax(arr))  # pos of max
+print("argmin",np.argmin(arr))  # Index of min No.
+print(np.argmax(arr))  # Index of max
 
 # *****************max and min for multi dimensional array*************
 arr = [[7, 2, 9], [4, 5, 6], [2, 3, 11]]
 
-print(np.min(arr, axis=0))  # for min in col
-print(np.min(arr, axis=1))  # for min in row
+print("multi dime",np.min(arr, axis=0))  # for min in col
+print("2222",np.min(arr, axis=1))  # for min in row
 
-print(np.argmin(arr, axis=0))  # pos of min along cols
-print(np.argmin(arr, axis=1))  # pos of min along rows
+print("3333",np.argmin(arr, axis=0))  # pos of min along cols
+print("argmin rows",np.argmin(arr, axis=1))  # pos of min along rows
 # same can be done to get max() and argmax()
 
 
