@@ -3,11 +3,12 @@
 nums = [1, 2, 3, 4]
 powers = [2, 2, 2, 2]
 
-def x(a, b):
-	return a ** b
+# def x(a, b):
+# 	return a ** b
 
+# num_powers = list(map(x, nums, powers))
+num_powers = list(map(lambda a, b : a ** b, nums, powers))
 
-num_powers = list(map(x, nums, powers))
 print(num_powers)
 
 # filter (nums even and greater than 2)
