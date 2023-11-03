@@ -1,0 +1,1 @@
+## Write an SQL query to find the Nth highest salary from the employees table.
