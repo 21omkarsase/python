@@ -1,5 +1,5 @@
 import re
-def searchLiteral(pattern, text):
+def matchRegex(pattern, text):
     match = re.search(pattern, text)
 
     if match != None:
