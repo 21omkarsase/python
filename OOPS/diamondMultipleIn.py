@@ -14,8 +14,8 @@ class C(A):
 
 
 class D(B, C):
-    # def met(self):
-    #     print("this is method of class D")
+    def met(self):
+        print("this is method of class D")
     pass
 
 

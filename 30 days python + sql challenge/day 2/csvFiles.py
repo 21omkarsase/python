@@ -3,6 +3,7 @@ print("Working with csv files")
 
 import csv
 
+
 # reading csv file as list of lists
 with open("files/suv_data.csv") as csvfile:
 	csvreader = csv.reader(csvfile)

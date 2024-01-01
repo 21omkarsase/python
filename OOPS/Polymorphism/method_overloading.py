@@ -1,5 +1,6 @@
 #method overloading==>same function with different no. of arguments
 
+from multipledispatch import dispatch
 class Employee:
     no_of_leaves = 10
 
@@ -7,6 +8,14 @@ class Employee:
         self.name = xname
         self.age = xage
         self.college = xcollege
+
+    @dispatch(int, int)
+    def subtract(self, a, b):
+        return a - b
+
+    @dispatch(int, int, int)
+    def subtract(self, a, b, c):
+        return a - b - c
 
     def printDetails(self):
         return f"name is {self.name} , age is {self.age} , college is {self.college} and no of leaves is {self.no_of_leaves}"
@@ -25,3 +34,6 @@ omkar = Employee("omkar", 20, "PCE")
 print(omkar.add(1,2,3))
 print(omkar.add(1,2))
 print(omkar.add(2))
+
+print(omkar.subtract(2, 3))
+print(omkar.subtract(2, 3, 4))

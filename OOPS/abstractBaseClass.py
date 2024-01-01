@@ -16,7 +16,7 @@ class Rectangle(Shape):
         self.breadth = 5
 
     def printArea(self):
-        print(self.length*self.breadth)
+        print(self.length * self.breadth)
 
 
 rect = Rectangle()
