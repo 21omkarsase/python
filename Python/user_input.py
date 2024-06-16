@@ -7,6 +7,4 @@ print(dreamCom,"is your dream company\n")
 sal1=int(input("Enter your job salary : "))
 sal2=int(input("Enter your buisness income : "))
 
-print("Your total monthy income is :",sal1+sal2,"\n")
-
-
+print("Your total monthly income is :",sal1+sal2,"\n")

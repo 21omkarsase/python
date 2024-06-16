@@ -34,7 +34,7 @@ print(dict2)
 print(items_of_dic,type(items_of_dic))
 print(keys_of_dict,type(keys_of_dict))
 print(values_of_dict,type(values_of_dict))
-print(dict2.pop(3))              #pops and returns specific value 
+print(dict2.pop(3))             #pops and returns specific value 
 print(dict2.popitem())           #pops out last ele
 
 

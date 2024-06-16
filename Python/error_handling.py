@@ -15,6 +15,9 @@ try:
 # so indentation error will always stop the program
 	
 except NameError as e:
+	import traceback
+	print('d\n')
+	traceback.print_exc()
 	print("Name error occured!",e)
 
 except ZeroDivisionError as e: #throws ZeroDivisionError for b==0

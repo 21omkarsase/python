@@ -28,10 +28,12 @@ print("\n")
 pattern = "ab*"
 text1 = "ba"
 text2 = "ab"
-text3 = "abb"
+
+text3 = "abbv"
 
 match = search.matchRegex(pattern, text1)
 match = search.matchRegex(pattern, text2)
+print('alf')
 match = search.matchRegex(pattern, text3)
 
 print("\n")

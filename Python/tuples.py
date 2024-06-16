@@ -17,4 +17,3 @@ print(tuple([1,2,3,4]))
 print(nums+sub)             #tuple concatenation
 print((nums,sub,nums+sub))  #multi tuples
 print(("pce",)*3)           #repetition tuples
-

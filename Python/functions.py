@@ -1,4 +1,4 @@
-#function wiht argument type and return type
+#function with argument type and return type
 
 print(5 is 5)
 print(1 is not 2)
@@ -46,7 +46,6 @@ def func(**args):
 		print(i,j)
 		
 func(first="omkar",last="sase")
-
 
 #    default pass by value-->string integer variables
 #    default pass by reference objects tuples lists dics
@@ -117,7 +116,6 @@ print(bin(7)[2:])  #111
 print(bool(True))
 print(bool(False))
 
-
 #eval()
 evaluate = 'x*(x+1)*(x+2)'
 print(evaluate)
@@ -144,7 +142,6 @@ print(round(23.4))
 print(round(23.5))
 print(round(23.6))
 
-
 #max() min()
 print(max(2,1,4,53,2))
 print(min(2,1,4,53,3))
@@ -157,5 +154,3 @@ print(pow(2,3))
 #sorted()   always returns a list with the elements in a sorted manner, without modifying the original sequence.
 print(sorted([3,2,1,5,53,1,7]))
 print(sorted([3,2,1,5,53,1,7],reverse=True))
-
-
