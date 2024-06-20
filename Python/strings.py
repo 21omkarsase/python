@@ -16,7 +16,7 @@ print(str1)
 print(str1[-1])  #charcter
 print(str1[0])   #charcter
 print(str1[0:9]) #substring
-print(str1[-5:]) #substring
+print(str1[-5:]) #substring	
 print(str1[:6])  #substring
 print(str1[0:len(str1):2]) # or [::2] #start end-1 increment
 print(str1[14:9:-1])       # in reverse order

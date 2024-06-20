@@ -1,37 +1,40 @@
-class Employee:
-    def __init__(self, fname, lname):
-        self.fname = fname
-        self.lname = lname
+from datetime import date
 
-    def explain(self):
-        if self.fname == None or self.lname == None:
-            return f"Employee name is not set please set it using setter"
-        return f"Employee name is {self.fname} {self.lname}"
+class Person:
+    def __init__(self, name, dob_str):
+        # Convert dob string to date object (assuming valid format)
+        self.dob = date.fromisoformat(dob_str)
+        self._name = name  # Use private variable for name
 
     @property
-    def email(self):
-        if self.fname == None or self.lname == None:
-            return f"Employee name is not set please set it using setter"
-        return f"{self.lname}{self.fname}@gamil.com"
+    def name(self):
+        return self._name
 
-    @email.setter
-    def email(self, string):
-        self.fname = string.split("@")[0].split(".")[1]
-        self.lname = string.split("@")[0].split(".")[0]
+    @property
+    def age(self):
+        today = date.today()
+        years = today.year - self.dob.year
+        # Check if birthday has passed in the current year
+        if (today.month, today.day) < (self.dob.month, self.dob.day):
+            years -= 1
+        return years
 
-    @email.deleter
-    def email(self):
-        self.fname = None
-        self.lname = None
+    @age.setter
+    def age(self, value):
+        raise AttributeError("Age cannot be set directly. It's calculated based on the date of birth.")
 
+    @age.deleter
+    def age(self):
+        raise AttributeError("Age cannot be deleted. It's calculated based on the date of birth.")
+    
+# Example usage
+person = Person("Alice", "1990-01-01")
 
-e1 = Employee("omkar", "sase")
-e2 = Employee("sairaj", "lakde")
-print(e2.explain())
-print("email", e2.email)
-e2.lname = "ambani"
-print(e2.email)
-e2.email = "kadam.rohan@gmail.com"
-print(f"Employee 2 name is {e2.fname} {e2.lname}")
-del e2.email
-print(e2.email)
+print(person.name)  # Access name with getter
+print(person.age)  # Access age with getter (calculated)
+
+# Attempt to set age (setter raises an error)
+# person.age = 30  # This will raise an AttributeError
+
+# Attempt to delete age (deleter prints a message)
+# del person.age  # Prints: Age property deleted...

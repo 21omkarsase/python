@@ -1,11 +1,15 @@
-from abc import ABC, abstractclassmethod
+from abc import ABC, abstractmethod
 
 
 class Shape(ABC):  # ABC O
-    @abstractclassmethod
+    @abstractmethod
     def printArea(self):
-        return 0
-
+        pass
+        
+    @property
+    @abstractmethod
+    def area(self):
+        pass
 
 class Rectangle(Shape):
     type = "rectangle"
@@ -14,10 +18,16 @@ class Rectangle(Shape):
     def __init__(self):
         self.length = 4
         self.breadth = 5
+    
+    @property
+    def area(self):
+        return self.breadth * self.length
 
     def printArea(self):
-        print(self.length * self.breadth)
+        print(self.area)
 
 
 rect = Rectangle()
 rect.printArea()
+
+# ss  = Shape() # can't be created

@@ -18,7 +18,7 @@ except NameError as e:
 	import traceback
 	print('d\n')
 	traceback.print_exc()
-	print("Name error occured!",e)
+	print("Name error occurred!",e)
 
 except ZeroDivisionError as e: #throws ZeroDivisionError for b==0
 	print("You can't divide a number by zero")

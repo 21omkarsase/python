@@ -1,3 +1,4 @@
+from multipledispatch import dispatch
 class Employee:
     no_of_leaves = 10
 
@@ -9,12 +10,15 @@ class Employee:
     def printDetails(self):
         return f"name is {self.name} , age is {self.age} , college is {self.college} and no of leaves is {self.no_of_leaves}"
         
+    @dispatch(int, int)
     def add(self,a:int,b:int)->int:
         return a+b
-    
-    def add(self,a:str,b:str)->str:
-        return a+b
         
+    @dispatch(str, str)
+    def add(self,a:str,b:str)->str:
+        return a-b
+        
+    @dispatch(int, str)    
     def add(self,a:int,b:str)->str:
         return b
         
@@ -39,3 +43,5 @@ print(omkar//rohan)
 
 print(repr(omkar))
 print(str(omkar))
+
+print('aslfjasdf', omkar.add(33, 55))

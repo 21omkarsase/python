@@ -4,7 +4,7 @@ class Employee:
         self.age = xage
         self.college = xcollege
 
-    def printDetails(self):
+    def printDetails(self, abc):
         return f"name is {self.name} , age is {self.age} , college is {self.college}"
 
 
@@ -20,4 +20,5 @@ class Programmer(Employee):
 
 binod = Programmer("binod", 25, "TU", "Python")
 print(binod.printDetails())
+# print(binod.printDetails('abc')) # error
 

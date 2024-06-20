@@ -4,18 +4,20 @@ class A:
 
 
 class B(A):
-    def met(self):
-        print("this is method of class B")
+    pass
+    # def met(self):
+    #     print("this is method of class B")
 
 
 class C(A):
-    def met(self):
-        print("this is method of class C")
+    pass
+    # def met(self):
+    #     print("this is method of class C")
 
 
 class D(B, C):
-    def met(self):
-        print("this is method of class D")
+    # def met(self):
+    #     print("this is method of class D")
     pass
 
 

@@ -20,13 +20,18 @@ c1.printInfo()
 
 # Base class
 class Person:
-    def __init__(self, name, age):
-        self.name = name
-        self.age = age
+    def __init__(self, name, age, emp_no):
+        self._name = name
+        self._age = age
+        self.__employee_no = emp_no
     
     def greet(self):
         return f"Hello, my name is {self.name} and I am {self.age} years old."
-
+    
+    def employee_info(self):
+        # fetch info from db
+        # print(info without emp id)
+        pass
 
 # Mixin classes
 class JobInfoMixin:

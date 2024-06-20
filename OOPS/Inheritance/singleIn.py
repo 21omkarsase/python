@@ -1,6 +1,3 @@
-from mimetypes import init
-
-
 class Employee:
     no_of_leaves = 10
 

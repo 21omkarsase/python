@@ -40,7 +40,7 @@ faang.sort()  #can only sort list of same data type
 faang.reverse()
 
 #pop
-random_list.pop(3)           #return ele and pop 
+random_list.pop(3)           # remove and return ele present at index 3 
 #clear
 # random_list.clear()
 

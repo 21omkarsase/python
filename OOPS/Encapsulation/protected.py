@@ -1,4 +1,4 @@
-#protected member start with _ 
+# protected member start with _ 
 # Although the protected variable can be accessed out of the class as well as in the derived class(modified too in derived class), it is customary(convention not a rule) to not access the protected out the class body.
 
 class ClassA:
