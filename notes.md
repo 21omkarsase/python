@@ -26,6 +26,9 @@ Python Membership Operators
 Python Identity Operator
     The 'is' operator evaluates to True if both the operand objects share the same memory location. 
     e.g is
+    
+    for mutable objects it compares memory location
+    for immutable it compares actual values (similar for int, boolean, none)
 
 Python - Match-Case Statement
     def weekday(n):
@@ -74,7 +77,6 @@ List
     l = ['abc', 'xyz', 1, 2, 3]
     del[1]
     l = ['abc', 1, 2, 3]
-    
 
 Dict
     my_dict = {'name' : 'omkar', 'age' : 22}
@@ -99,7 +101,7 @@ Encapsulation
     
     Data Protection:
     Improved Maintainability:
-    Modular Design: 
+    Modular Design:
 
 Inheritance
     It allows you to create new classes (subclasses) based on existing classes (parent classes). 
@@ -256,9 +258,9 @@ Authentication Types
 Django Request - Response Life Cycle
 1. Request initialization (web browser or mobile app)
 2. wsgi server passes request to django application
-3. request passed thorugh middlewares
+3. request passed through middlewares
 4. url routing to view
 5. view processing
 6. response generated and sent back to the middlewares
 7. wsgi server receives the response
-8. web server receives the reponse
+8. web server receives the response

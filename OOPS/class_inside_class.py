@@ -30,3 +30,27 @@ s1=Student("omkar","hp")
 s1.show()
 
 
+class Car:
+    def __init__(self, make, model):
+        self.make = make
+        self.model = model
+        self.engine = self.Engine()
+
+    def drive(self):
+        print(f"Driving the {self.make} {self.model}")
+
+    class Engine:
+        def start(self):
+            print("Engine started")
+
+        def stop(self):
+            print("Engine stopped")
+
+# Create a car instance
+my_car = Car("Toyota", "Camry")
+
+# Access methods of Car class
+my_car.drive()
+
+# Access methods of Engine class through Car class instance
+my_car.engine.start()

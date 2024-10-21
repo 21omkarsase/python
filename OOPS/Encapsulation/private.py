@@ -3,32 +3,34 @@ class FatherTest:
         self._className = "ParentTest"
         self._par1 = par1
         pass 
+    
+    def printClassName(self):
+        print('father', self._className)
 class MotherTest:
     def __init__(self, par3):
         self._className = "MotherTest"
         self._par3 = par3
         pass 
+    
+    def printClassName(self):
+        print('mother', self._className)
+    
 
 class ChildTest(FatherTest, MotherTest):
     def __init__(self, par1, par2, par3):
-        # super().__init__(par1, par3)
         MotherTest.__init__(self, par3)
         FatherTest.__init__(self, par1)
-        # self._className = "ChildTest"
         self._par2 = par2
         pass
 	
     def printClassName(self):
-        print(self._className)
-        print(self._par1)
-        print(self._par2)
-        print(self._par3)
+        super().printClassName()
+        MotherTest.printClassName(self)
+        FatherTest.printClassName(self)
         
 ct = ChildTest("par1", "par2", "par3")
 
 ct.printClassName()
-
-print(ct._className)
 
 # # Private members are similar to protected members, the difference is that the class members declared private should neither be accessed outside the class nor by any base class. In Python, there is no existence of Private instance variables that cannot be accessed except inside a class.
 

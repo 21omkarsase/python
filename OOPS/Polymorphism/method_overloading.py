@@ -12,6 +12,14 @@ class Employee:
     @dispatch(int, int)
     def subtract(self, a, b):
         return a - b
+    
+    @dispatch(int, str)
+    def subtract(self, a, b):
+        return str(a) + str(b)
+    
+    @dispatch(str, int)
+    def subtract(self, a, b):
+        return str(a) + str(b)
 
     @dispatch(int, int, int)
     def subtract(self, a, b, c):
@@ -37,3 +45,5 @@ print(omkar.add(2))
 
 print(omkar.subtract(2, 3))
 print(omkar.subtract(2, 3, 4))
+print(omkar.subtract(2, 'ds'))
+print(omkar.subtract('ds', 33))

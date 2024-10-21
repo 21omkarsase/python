@@ -16,7 +16,7 @@ for i in range(len(faang)):
 	print(faang[i],end=" ")
 
 
-#*****************List comprehension**************
+# *****************List comprehension**************
 nums=[x for x in range(10,21)]
 odds=[x for x in range(1,50) if x&1]  #[expression loop condition]
 squares=[x*x for x in range(11)]
@@ -50,7 +50,7 @@ print(faang.index("Apple"))  #returns index of given ele
 print(faang.count("Apple"))  #returns count of given ele
 
 #copy
-com=faang.copy()             #copy of original string
+com=faang.copy()             # shallow copy of original string
 print(com," com")
 
 print(random_list)

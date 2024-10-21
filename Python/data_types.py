@@ -32,3 +32,14 @@ print(my_data,type(my_data))
 
 
 
+s = "my name is omkar " \
+    "I live on earth"
+
+# treated as a single line
+
+print(s)
+
+
+my_dict = {'b': 2, 'a': 1, 'c': 3}
+print(my_dict)
+

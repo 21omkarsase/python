@@ -28,13 +28,13 @@ data = [{"login": "mojombo", "id": 1, "node_id": "MDQ6VXNlcjE="},{"login": "defu
 # with open('python 30 days/day 2/files/user_output.json', 'w') as jsonfile:
 # 	json.dump(data, jsonfile)
 
-# Converting JSON to JSON string
+# Converting JSON to JSON stringṇṇ
 json_string = json.dumps(data, indent = 2)
 print(json_string, '\n')
 print(type(json_string)) # str
 
-with open('python 30 days/day 2/files/new_file.json', 'w') as file:
-    data = json.dumps(data)
+with open('new_file.json', 'w') as file:
+    data = json.dump(data, file, indent = 2)
     print(data, type(data))
 
 # # for pretty writing / printing use -> indent = some number

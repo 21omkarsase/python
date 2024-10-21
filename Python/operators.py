@@ -15,6 +15,6 @@ power=a**b
 
 makeUlta=not sun_is_planet
 
-print(decDiv,norDiv)
-print(mult,power)
+print(decDiv, norDiv)
+print(mult, power)
 print(makeUlta)
